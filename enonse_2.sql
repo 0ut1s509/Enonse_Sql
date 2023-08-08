@@ -1,5 +1,5 @@
 
-CREATE DATABASE Boutik;
+CREATE DATABASE IF NOT EXISTS Boutik;
 
 USE Boutik;
 
