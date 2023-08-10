@@ -15,14 +15,14 @@ CREATE TABLE IF NOT EXISTS Students (
 
 INSERT INTO Students (first_name, last_name, age, grade_math, grade_science, grade_history, grade_english)
 VALUES
-    ('John', 'Doe', 18, 85, 92, 78, 0),
-    ('Jane', 'Smith', 17, 92, 88, 75, 0),
-    ('Michael', 'Johnson', 16, 78, 95, 82, 0),
-    ('Emily', 'Williams', 18, 90, 85, 88, 0),
-    ('David', 'Brown', 17, 82, 78, 91, 0);
+    ('samfeyo', 'Jacques', 18, 85, 92, 78, 0),
+    ('Foukan', 'Jean', 17, 92, 88, 75, 0),
+    ('Mesidye', 'Joseph', 16, 78, 95, 82, 0),
+    ('Dyepifo', 'Charelus', 18, 90, 85, 88, 0),
+    ('Jezila', 'Jules', 17, 82, 78, 91, 0);
     
     
-    UPDATE Students
+UPDATE Students
 SET grade_math = 88
 WHERE student_id = 1;
 
