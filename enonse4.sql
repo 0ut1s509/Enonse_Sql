@@ -36,4 +36,4 @@ ALTER TABLE Students
 ADD COLUMN grade_english INT;
 
 DELETE FROM Students
-WHERE first_name = 'Michael' OR last_name = 'Michael';
+WHERE first_name = 'Mesidye';
