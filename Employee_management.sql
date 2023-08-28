@@ -28,14 +28,24 @@ CREATE TABLE Salaries (
 INSERT INTO Departments (department_id, department_name)
 VALUES (1, 'Sales');
 
+
+
+-- Insert some new employee into the Employees table.
+INSERT INTO Employees (employee_id, first_name, last_name, email, hire_date, department_id)
+VALUES
+    (101, 'John', 'Doe', 'johndoe@gmail.com', '2023-08-27', 1)
+    (102, 'Alice', 'Johnson', 'alicejohnson@gmail.com', '2023-07-15', 1),
+    (103, 'Michael', 'Smith', 'michael.smith@gmail.com', '2023-06-10', 2),
+    (104, 'Emily', 'Brown', 'emily.brown@gmail.com', '2023-08-01', 1);
+
 -- Insert a new employee into the Employees table.
 INSERT INTO Employees (employee_id, first_name, last_name, email, hire_date, department_id)
 VALUES (101, 'John', 'Doe', 'johndoe@gmail.com.com', '2023-08-27', 1);
 
--- Update the department for the employee with ID 101.
+-- Update the email address for the employee with the ID 103
 UPDATE Employees
-SET first_name = 'Jules'
-WHERE employee_id = 101;
+SET email = 'newemail@gmail.com'
+WHERE employee_id = 103;
 
 -- Retrieve employee details including first name, last name, email, and hire date.
 SELECT first_name, last_name, email, hire_date
